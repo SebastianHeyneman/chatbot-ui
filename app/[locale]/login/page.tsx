@@ -163,6 +163,15 @@ export default async function Login({
 
   return (
     <div className="h-screen w-full lg:grid lg:min-h-[600px] lg:grid-cols-2 xl:min-h-[800px]">
+      <div className="bg-muted hidden lg:block">
+        <img
+          src="/login-image.webp"
+          alt="Image"
+          width="1920"
+          height="1080"
+          className="size-full object-cover [object-position:18%_100%]"
+        />
+      </div>
       <div className="flex items-center justify-center py-12">
         <div className="mx-auto grid w-[350px] gap-6">
           <form
@@ -223,16 +232,6 @@ export default async function Login({
             )}
           </form>
         </div>
-      </div>
-      <div className="bg-muted hidden lg:block">
-        <img
-          src="/IMG_8191.jpeg"
-          // src="/logo.jpg"
-          alt="Image"
-          width="1920"
-          height="1080"
-          className="size-full object-cover object-right brightness-[0.6]"
-        />
       </div>
     </div>
   )
