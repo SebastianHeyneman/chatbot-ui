@@ -11,8 +11,8 @@ interface BrandProps {
 export const Brand: FC<BrandProps> = ({ theme = "dark" }) => {
   return (
     <Link
-      className="flex cursor-pointer flex-col items-center hover:opacity-50"
-      href="https://www.chatbotui.com"
+      className="flex cursor-pointer flex-col items-center transition-all duration-300 hover:opacity-90"
+      href="https://acceleratex.com"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -20,7 +20,7 @@ export const Brand: FC<BrandProps> = ({ theme = "dark" }) => {
         <ChatbotUISVG theme={theme === "dark" ? "dark" : "light"} scale={0.3} />
       </div>
 
-      <div className="text-4xl font-bold tracking-wide">Chatbot UI</div>
+      <div className="text-4xl font-bold tracking-wide">Gateway</div>
     </Link>
   )
 }
