@@ -9,15 +9,6 @@ const withPWA = require("next-pwa")({
 module.exports = withBundleAnalyzer(
   withPWA({
     reactStrictMode: true,
-    async redirects() {
-      return [
-        {
-          source: "/",
-          destination: "/login",
-          permanent: false
-        }
-      ]
-    },
     images: {
       remotePatterns: [
         {
