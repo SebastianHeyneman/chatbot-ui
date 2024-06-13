@@ -189,13 +189,14 @@ export default async function Login({
           placeholder="••••••••"
         />
 
-        <SubmitButton className="mb-2 rounded-md bg-blue-700 px-4 py-2 text-white">
+        <SubmitButton variant={"default"} className="mb-2 rounded-md px-4 py-2">
           Login
         </SubmitButton>
 
         <SubmitButton
+          variant={"ghost"}
           formAction={signUp}
-          className="border-foreground/20 mb-2 rounded-md border px-4 py-2"
+          className=" mb-2 rounded-md border px-4 py-2"
         >
           Sign Up
         </SubmitButton>
